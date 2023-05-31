@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My City</title>
+
+        <link rel="stylesheet" href="mycity/main.css">
+    </head>
+
+    <body id="body" onload="hideContent()">
+        <div id="video">
+            <video autoplay muted>
+                <source src="images/earth zoom.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+
+        <div id="content">
+            <div id="selection1">
+                <img src="images/note.png">
+            </div>
+
+            <div id="selection2">
+                <img style="transform: rotate(1deg);" src="images/sofia 1.jpg">
+                <img style="transform: rotate(-2deg);" src="images/sofia 2.jpg">
+                <img style="transform: rotate(3deg);" src="images/sofia 3.jpg">
+            </div>
+
+            <button onclick="window.location.href='/'">
+                <span>Back</span>
+                <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
+                </svg>
+            </button>
+        </div>
+
+        <script>
+            const content = document.getElementById("content");
+            function hideContent() {
+                content.style.display = "none";
+            }
+
+            setTimeout(function() {
+                content.style.display = "flex";
+                // document.getElementById("body").style.overflow = "hidden";
+
+                let targetPosition = window.innerHeight;
+                let scrollOptions = {
+                    top: targetPosition,
+                    behavior: 'smooth'
+                };
+                window.scrollTo(scrollOptions);
+            }, 7000);
+
+            setTimeout(function() {
+                document.getElementById("video").style.display = "none";
+                document.getElementById("body").style.overflow = "auto";
+            }, 8000);
+        </script>
+    </body>
+</html>
