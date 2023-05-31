@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "my_world",
+  "version": "1.0.0",
+  "description": "This is my site for school project. It is really bad, but I hope I get 6.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VencislavManoilov/VencislavManoilov.github.io.git"
+  },
+  "author": "Vencislav Manoilov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VencislavManoilov/VencislavManoilov.github.io/issues"
+  },
+  "homepage": "https://github.com/VencislavManoilov/VencislavManoilov.github.io#readme"
+}
